@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../pages/Login.css"
+import "../styles/Login.css"
 import icon from "../assets/icon.webp"
 
 function Login() {

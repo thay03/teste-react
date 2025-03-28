@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Sidebar from "../components/Sidebar"; 
+import "../styles/GerarNovoCaso.css"
 
 function GerarNovoCaso() {
   const [responsavel, setResponsavel] = useState("");
@@ -13,6 +15,10 @@ function GerarNovoCaso() {
   };
 
   return (
+
+    <div className="dashboard-container">
+          <Sidebar /> {/* Adicionando o sidebar */}
+
     <div className="gerar-caso-container">
       <form onSubmit={handleSubmit}>
         <label>
@@ -62,6 +68,7 @@ function GerarNovoCaso() {
         <button type="submit">Criar Caso</button>
       </form>
     </div>
+  </div>
   );
 }
 

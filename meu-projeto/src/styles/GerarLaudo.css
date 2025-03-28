@@ -1,0 +1,6 @@
+.gerar-laudo-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 20px;
+}

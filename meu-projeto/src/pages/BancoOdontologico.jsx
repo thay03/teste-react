@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Sidebar from "../components/Sidebar"; 
+import "../styles/BancoOdontologico.css"
 
 function BancoOdontologico() {
   const [pesquisa, setPesquisa] = useState("");
@@ -13,6 +15,10 @@ function BancoOdontologico() {
   };
 
   return (
+
+    <div className="dashboard-container">
+          <Sidebar /> {/* Adicionando o sidebar */}
+
     <div className="banco-container">
       <input
         type="text"
@@ -30,6 +36,7 @@ function BancoOdontologico() {
         ))}
       </div>
     </div>
+  </div>
   );
 }
 

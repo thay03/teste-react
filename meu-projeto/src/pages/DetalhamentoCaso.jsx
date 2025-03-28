@@ -1,5 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import Sidebar from "../components/Sidebar";
+import "../styles/Detalhamento.css"
+
 
 function DetalhamentoCaso() {
   const { id } = useParams();
@@ -13,6 +16,10 @@ function DetalhamentoCaso() {
   };
 
   return (
+
+    <div className="dashboard-container">
+          <Sidebar /> {/* Adicionando o sidebar */}
+
     <div className="detalhamento-container">
       <h2>Detalhamento do Caso: {caso.nome}</h2>
       <p><strong>Responsável:</strong> {caso.responsavel}</p>
@@ -21,6 +28,7 @@ function DetalhamentoCaso() {
       <p><strong>Descrição:</strong> {caso.descricao}</p>
       <button>Baixar Anexos</button>
     </div>
+  </div>
   );
 }
 
