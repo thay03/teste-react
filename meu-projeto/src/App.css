@@ -17,7 +17,6 @@ src/App.css
 .dashboard-layout .main-content {
   flex: 1;
   padding: 20px;
-  margin-left: 250px; /* Espaço para o Sidebar */
 }
 
 /* Corpo da página com fonte padrão */
