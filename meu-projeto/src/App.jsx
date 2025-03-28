@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Sidebar from "./components/Sidebar";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import DetalhamentoCaso from "./pages/DetalhamentoCaso";
@@ -12,7 +12,6 @@ function App() {
   return (
     <Router>
       <div className="app-container">
-        <Sidebar />
         <div className="main-content">
           <Routes>
             <Route path="/" element={<Login />} />

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import './Login.css'
+import "../pages/Login.css"
+import icon from "../assets/icon.webp"
 
 function Login() {
   const [usuario, setUsuario] = useState("");
@@ -16,7 +17,11 @@ function Login() {
 
   return (
     <div className="login-container">
-      <form onSubmit={handleSubmit}>
+       <div className="icon">
+        <img src={icon} alt="icon-app" />
+        </div>
+      <form onSubmit={handleSubmit} className="login-from">
+       
         <label>
           Usuário:
           <input
@@ -24,6 +29,7 @@ function Login() {
             value={usuario}
             onChange={(e) => setUsuario(e.target.value)}
             required
+            size="30"
           />
         </label>
         <label>

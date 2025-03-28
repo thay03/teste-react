@@ -1,0 +1,32 @@
+.dashboard-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 200px;
+}
+.card{
+    background-color: rgba(196, 195, 195, 0.212);
+    padding: 15px;
+    margin: 30px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px;
+    transition: transfrom 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-5px);
+}
+.card h3{
+    color: #000000;
+    font-size: 20px;
+}
+.card p{
+    color: #000000;
+    font-size: 14px;
+}
+.card a{
+    text-decoration: none;
+    color: #000000;
+}
+h2{
+    text-align: center;
+}
