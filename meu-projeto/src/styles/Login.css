@@ -26,7 +26,7 @@ body{
 
 
 /* Estiliza o formulário */
-form {
+.login-container form {
   display: flex;
   flex-direction: column;
   background: white;
@@ -37,14 +37,14 @@ form {
 }
 
 /* Ajusta os inputs */
-label {
+.login-container label {
   display: flex;
   flex-direction: column;
   margin-bottom: 18px;
   font-size: 16px;
 }
 
-input {
+.login-container input {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -54,7 +54,7 @@ input {
 }
 
 /* Botão estilizado */
-button {
+.login-container button {
   background-color: #4a6572;
   color: white;
   padding: 12px;
@@ -65,7 +65,7 @@ button {
   font-size: 16px;
 }
 
-button:hover {
+.login-container button:hover {
   background-color: #9dc88d;
   transition: background 0.5s ease;
 }
