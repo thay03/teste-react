@@ -1,11 +1,40 @@
-/* Centraliza o login na tela */
+/* Centraliza o login na tela com o fundo cinza */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
 .login-container {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  height: 100vh;
-  background-color: rgb(255, 255, 255);
-  gap: 30px;
+  height: 90vh;
+  width: 70vw; 
+  margin: 30px auto; 
+  background-color:  #f0f0f0;
+  border-radius: 25px;
+}
+
+/* Estiliza o ícone */
+.icon img {
+  border-radius: 50%;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Estiliza o formulário */
@@ -13,9 +42,11 @@ form {
   display: flex;
   flex-direction: column;
   background: white;
-  padding: 20px;
+  padding: 30px;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
 }
 
 /* Ajusta os inputs */
@@ -31,24 +62,77 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-top: 5px;
+  font-size: 14px;
+  width: 100%;
 }
 
 /* Botão estilizado */
 button {
   background-color: #4a6572;
   color: white;
-  padding: 10px;
+  padding: 12px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 10px;
+  font-size: 16px;
 }
 
 button:hover {
   background-color: #9dc88d;
+  transition: background 0.5s ease;
 }
-.icon img{
-  border-radius: 50px;
-  width: 200px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+
+
+.senha-opcoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.senha-opcoes input[type="checkbox"] {
+  margin-right: 5px; 
+}
+
+.senha-opcoes label {
+  margin-right: auto; 
+}
+
+
+.senha-opcoes .esqueceu, .senha-opcoes .login{
+  margin: 20px;
+  cursor: pointer;
+  text-decoration:underline;
+  
+  
+}
+
+.senha-opcoes .login{
+  text-decoration: none;
+  color: var(--cor-texto-botao-costureira);
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .login-container {
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    width: 70%;
+    text-align: center;
+  }
+
+  form {
+    width:80%;
+    max-width: 300px;
+  }
+
+
+  .icon img {
+    width: 150px;
+  }
 }
