@@ -39,15 +39,17 @@ display: flex;
     background-color: #9dc88d;
     transition: background 0.5s ease;
   }
-@media (max-width:768px) {
-    .gerar-laudo-container{
-    margin-left: 90px;
+  @media screen and (max-width: 1170px) {
+    .gerar-laudo-container {
+     margin-left: 90px;
      max-width: 18rem;
- } }
-
-@media (max-width: 480px) {
+ } 
+}
+ @media screen and (max-width: 600px) {
     .gerar-laudo-container{
-        padding: 10px;
+        padding: 9px;
+        max-width: 16.5rem;
+        margin-left: 3px;
     }
     
 }

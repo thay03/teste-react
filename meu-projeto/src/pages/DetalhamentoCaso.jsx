@@ -1,11 +1,9 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 import "../styles/Detalhamento.css"
 
 
 function DetalhamentoCaso() {
-  const { id } = useParams();
 
   const caso = {
     nome: "Caso 1",
@@ -13,6 +11,9 @@ function DetalhamentoCaso() {
     status: "Em andamento",
     localizacao: "Rua X, 123",
     descricao: "Descrição detalhada do caso...",
+    data: "Dia do ocorrido ",
+    informacao: "Informações adicionas",
+    imagem:"imagem da evidencia",
   };
 
   return (
@@ -26,6 +27,9 @@ function DetalhamentoCaso() {
       <p><strong>Status:</strong> {caso.status}</p>
       <p><strong>Localização:</strong> {caso.localizacao}</p>
       <p><strong>Descrição:</strong> {caso.descricao}</p>
+      <p><strong>Data:</strong> {caso.data}</p>
+      <p><strong>Informações:</strong>{caso.informacao}</p>
+      <p><strong>Imagem:</strong> {caso.imagem}</p>
       <button>Baixar Anexos</button>
     </div>
   </div>

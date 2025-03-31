@@ -1,7 +1,7 @@
 .sidebar{
-    width: 200px;
+    width: 180px;
     height: 100vh;
-    background-color: #9ae080;
+    background-color: #3155a4;
     color: white;
     padding: 20px;
     position: fixed;
@@ -36,7 +36,7 @@
 
 }
 .sidebar ul li a:hover{
-    color: #01556e;
+    color: #a0a5a2;
 
 }
 .sidebar ul li a i{
@@ -44,12 +44,12 @@
     font-size: 1.2rem;
 }
 .sidebar img{
-    width: 50px;
+    width: 90px;
 }
 /* responsividade */
 @media (max-width: 768px) {
     .sidebar{
-        width: 50px;
+        width: 40px;
         height: 100vh;
     }
     .sidebar h3{
@@ -60,9 +60,14 @@
     }
     .sidebar ul li a i {
         font-size: 1.7rem;
-        margin-right: 1.9rem;
+        margin-right: 0;
     }
     .sidebar ul li a span {
         display: none;
+    }
+    .sidebar img {
+        width: 50px;
+        margin-right: 0 ;
+        
     }
 }
