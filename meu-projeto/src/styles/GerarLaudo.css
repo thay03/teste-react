@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    margin-left: 200px;
-    flex-grow: 1;
+    margin-left: 27px;
+    min-height: 100vh;
 } 
 @media (max-width:768px) {
     .gerar-laudo-container{
-        margin-left: 200px;
+        margin-left: 27px;
         padding: 15px;
     }
 }
