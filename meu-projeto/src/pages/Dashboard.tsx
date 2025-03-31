@@ -6,8 +6,8 @@ import "../styles/Dashboard.css"
 
 function Dashboard() {
   const casos = [
-    { id: 1, nome: "Caso 1", responsavel: "Dr. Silva" },
-    { id: 2, nome: "Caso 2", responsavel: "Dr. Souza" },
+    { id: 1, nome: "Caso 1", responsavel: "Dr. Silva", status: " Em andamento" },
+    { id: 2, nome: "Caso 2", responsavel: "Dr. Souza", status: "Resolvido" },
   ];
 
   return (
@@ -21,6 +21,7 @@ function Dashboard() {
             <div key={caso.id} className="card">
               <h3>{caso.nome}</h3>
               <p>Responsável: {caso.responsavel}</p>
+              <p>Status : {caso.status}</p>
               <Link to={`/detalhamento/${caso.id}`}>Ver detalhes</Link>
             </div>
           ))}

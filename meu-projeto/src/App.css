@@ -7,12 +7,6 @@ src/App.css
 }
 
 
-/* Layout com o Sidebar na página principal */
-.dashboard-layout {
-  display: flex;
-  width: 100%;
-}
-
 /* Estilo para o conteúdo principal */
 .dashboard-layout .main-content {
   flex: 1;

@@ -1,6 +1,20 @@
-.gerar-caso-container{
+.gerar-caso{
     display: flex;
     flex-direction: column;
     padding: 10px;
     margin-left: 20px;
+    flex-grow: 1;
+} 
+@media (max-width:768px) {
+    .gerar-caso{
+        margin-left: 0px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gerar-caso{
+        padding: 10px;
+    }
+    
 }

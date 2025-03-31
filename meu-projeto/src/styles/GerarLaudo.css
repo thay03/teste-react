@@ -1,6 +1,20 @@
 .gerar-laudo-container{
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    margin-left: 20px;
+    padding: 20px;
+    margin-left: 200px;
+    flex-grow: 1;
+} 
+@media (max-width:768px) {
+    .gerar-laudo-container{
+        margin-left: 200px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gerar-laudo-container{
+        padding: 10px;
+    }
+    
 }
