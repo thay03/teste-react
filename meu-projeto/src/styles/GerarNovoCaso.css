@@ -42,7 +42,7 @@ display: flex;
   }
   @media (max-width:768px) {
     .gerar-caso{
-        margin-left: 90px;
-        max-width: 18rem;
+        margin-left: 60px;
+        max-width: 16.5rem;
     }
   }

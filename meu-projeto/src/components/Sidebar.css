@@ -44,12 +44,12 @@
     font-size: 1.2rem;
 }
 .sidebar img{
-    width: 90px;
+    width: 50px;
 }
 /* responsividade */
 @media (max-width: 768px) {
     .sidebar{
-        width: 90px;
+        width: 50px;
         height: 100vh;
     }
     .sidebar h3{
@@ -60,7 +60,7 @@
     }
     .sidebar ul li a i {
         font-size: 1.7rem;
-        margin-right: 2rem;
+        margin-right: 1.9rem;
     }
     .sidebar ul li a span {
         display: none;
