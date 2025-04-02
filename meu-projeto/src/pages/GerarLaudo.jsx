@@ -61,12 +61,12 @@ import "../styles/GerarLaudo.css";
     doc.text(`Métodos Utilizados: ${dados.metodos.join(",")}`, 20, 180);
 
     
-    doc.text("ACHADOS PERICIAIS", 20, 220);
-    doc.text(`DESCRIÇÃO:${dados.achados}`, 20, 230);
+    doc.text("ACHADOS PERICIAIS", 20, 230);
+    doc.text(`DESCRIÇÃO:${dados.achados}`, 20, 240);
 
-    doc.text("CONCLUÇÃO", 20, 220);
-    doc.text(`Diagnóstico: ${dados.diagnostico}`, 20, 240);
-    doc.text(`Grau de certeza: ${dados.grauCerteza}`, 20, 250);
+    doc.text("CONCLUÇÃO", 20, 250);
+    doc.text(`Diagnóstico: ${dados.diagnostico}`, 20, 260);
+    doc.text(`Grau de certeza: ${dados.grauCerteza}`, 20, 267);
 
     doc.text("_______________________", 20, 280);
     doc.text(`${dados.perito}`, 20, 290);
@@ -88,6 +88,9 @@ import "../styles/GerarLaudo.css";
     <label>Data :</label>
     <input type="date" name="data" onChange={handleChange}></input>
 
+    <label>Hora:</label>
+    <input type="time" name="time" onChange={handleChange} />
+
     <label>Perito Responsável :</label>
     <input type="text" name="perito" onChange={handleChange}></input>
 
@@ -96,7 +99,7 @@ import "../styles/GerarLaudo.css";
     <input type="text" name="numeroPacirnte" onChange={handleChange}></input>
 
     <label>Data de Nascimento</label>
-    <input type="text" name="nascimento" onChange={handleChange}></input>
+    <input type="data" name="nascimento" onChange={handleChange}></input>
 
     <label>Sexo:</label>
     <select name="sexo" onChange={handleChange}>
