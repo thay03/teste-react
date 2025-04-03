@@ -8,7 +8,7 @@ import GerarNovoCaso from "./pages/GerarNovoCaso";
 import GerarLaudo from "./pages/GerarLaudo";
 import BancoOdontologico from "./pages/BancoOdontologico";
 import Admin from "./adm/Admin";
-import Cadastrar from "./adm/Cadastrar"
+import Cadastrar from "./adm/Cadastrar";
 
 function App() {
   return (
