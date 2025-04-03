@@ -4,15 +4,26 @@ import "../styles/Login.css";
 import icon from "../assets/icon.webp";
 
 function Login() {
-  const [usuario, setUsuario] = useState("");
   const [senha, setSenha] = useState("");
   const [mostrarSenha, setMostrarSenha] = useState(false);
+  const [tipoUsuario, setTipoUsuario] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (usuario && senha) {
-      navigate("/dashboard");
+    if (!tipoUsuario || !senha) {
+      alert("Selecione um tipo");
+      return;
+    }
+
+    localStorage.setItem("tipoUsuario", tipoUsuario);
+
+    //Rotas para acesso de cada cargo
+
+    if(tipoUsuario === "admin"){
+      navigate("/admin");
+    } else if (tipoUsuario === "perito"){
+      navigate("/dashboard")
     }
   };
 
@@ -26,13 +37,15 @@ function Login() {
       <form onSubmit={handleSubmit} className="login-form">
         <label>
           Usuário:
-          <input
-            type="text"
-            value={usuario}
-            onChange={(e) => setUsuario(e.target.value)}
-            required
-            size="30"
-          />
+        <select
+          value={tipoUsuario}
+          onChange={(e) => setTipoUsuario(e.target.value)}
+          required>
+            <option value="Selecione"> Selecione</option>
+            <option value="admin"> Administrador</option>
+            <option value="perito"> Perito </option>
+        </select>
+          
         </label>
 
         <label>

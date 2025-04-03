@@ -5,6 +5,8 @@ import Sidebar from "../components/Sidebar";
 import "../styles/Dashboard.css"
 
 function Dashboard() {
+
+  
   const casos = [
     { id: 1, nome: "Caso 1", responsavel: "Dr. Silva", status: " Em andamento" },
     { id: 2, nome: "Caso 2", responsavel: "Dr. Souza", status: "Resolvido" },

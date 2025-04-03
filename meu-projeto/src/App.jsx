@@ -7,6 +7,8 @@ import DetalhamentoCaso from "./pages/DetalhamentoCaso";
 import GerarNovoCaso from "./pages/GerarNovoCaso";
 import GerarLaudo from "./pages/GerarLaudo";
 import BancoOdontologico from "./pages/BancoOdontologico";
+import Admin from "./adm/Admin";
+import Cadastrar from "./adm/Cadastrar"
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
             <Route path="/gerar-novo-caso" element={<GerarNovoCaso />} />
             <Route path="/gerar-laudo/:id" element={<GerarLaudo />} />
             <Route path="/banco-odontologico" element={<BancoOdontologico />} />
+            <Route path = "/admin" element={<Admin/>} />
+            <Route path = "/cadastrar" element={<Cadastrar/>} />
+
           </Routes>
         </div>
       </div>
