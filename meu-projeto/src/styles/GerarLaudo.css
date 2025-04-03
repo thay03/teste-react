@@ -8,9 +8,9 @@ display: flex;
   max-width: 100rem;
 } 
 .gerar-laudo-container label {
-    display: flex;
+    display: block;
     flex-direction: column;
-    margin-bottom: 18px;
+    margin-bottom: 2px;
     font-size: 16px;
   }
   

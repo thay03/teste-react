@@ -8,9 +8,9 @@
     max-width: 100rem;
   } 
   .gerar-caso label {
-      display: flex;
+      display: block;
       flex-direction: column;
-      margin-bottom: 18px;
+      margin-bottom: 2px;
       font-size: 16px;
     }
     

@@ -99,7 +99,7 @@ import "../styles/GerarLaudo.css";
     <input type="text" name="numeroPacirnte" onChange={handleChange}></input>
 
     <label>Data de Nascimento</label>
-    <input type="data" name="nascimento" onChange={handleChange}></input>
+    <input type="date" name="nascimento" onChange={handleChange}></input>
 
     <label>Sexo:</label>
     <select name="sexo" onChange={handleChange}>
