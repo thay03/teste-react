@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SidebarAdm from "./SidebarAdm"; 
+import Sidebar from "../components/Sidebar"; 
 
 function Admin() {
     return (
         <div className="dashboard-container">
-      <SidebarAdm /> {/* Adicionando o sidebar */}</div>
+      <Sidebar /> {/* Adicionando o sidebar */}</div>
     );
   }
   

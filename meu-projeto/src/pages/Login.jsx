@@ -37,15 +37,13 @@ function Login() {
       <form onSubmit={handleSubmit} className="login-form">
         <label>
           Usuário:
-        <select
+        <input
+          type="text"
           value={tipoUsuario}
           onChange={(e) => setTipoUsuario(e.target.value)}
+          placeholder="Digite seu usuário"
           required>
-            <option value="Selecione"> Selecione</option>
-            <option value="admin"> Administrador</option>
-            <option value="perito"> Perito </option>
-        </select>
-          
+        </input>
         </label>
 
         <label>

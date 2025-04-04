@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SidebarAdm from "./SidebarAdm"; 
+import Sidebar from "../components/Sidebar"; 
 
 function Cadastrar() {
     return (
          <div className="dashboard-container">
-              <SidebarAdm /> {/* Adicionando o sidebar */}
+              <Sidebar/> {/* Adicionando o sidebar */}
               
               <div className="content-container">
                 <h2> Cadastrar Novo Peritos </h2>
