@@ -4,7 +4,7 @@ import "../components/Sidebar.css"
 import icon from "../assets/icon.webp"
 
 function Sidebar() {
-  const tipoUsuario = localStorage.getItem("tipoUsuario");
+  const tipoUsuario = localStorage.getItem("tipoUsuario")?.toLowerCase();
   return (
     <div className="sidebar">
       <div className="icon">
