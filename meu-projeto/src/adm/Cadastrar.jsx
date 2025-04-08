@@ -79,8 +79,9 @@ function RegisterPerito(){
           </div> 
 
           <button type="submit">Cadastrar Perito</button>
-        </form>       
+
           <button onClick={handleButtonClick}>Ver Lista de Peritos</button>
+        </form>       
     </div>
   );
 }
