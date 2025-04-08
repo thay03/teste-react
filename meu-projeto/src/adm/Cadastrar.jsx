@@ -9,6 +9,7 @@ function RegisterPerito(){
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [cargo, setCargo] = useState("");
+  const [acesso, setAcesso] = useState("");
 
   const navigate = useNavigate();
 
@@ -29,6 +30,7 @@ function RegisterPerito(){
       setNome("");
       setEmail("");
       setCargo("");
+      setAcesso("");
       showToast("Perito Cadastrado");
     } catch(err){console.error("Erro ao cadastrar");
       showToast("Erro ao cadastrar");
@@ -76,9 +78,17 @@ function RegisterPerito(){
               onChange={(e) => setCargo(e.target.value)}
               required
               />
+
+              <label>Tipo de acesso </label>
+              <input
+              type="text"
+              value={acesso}
+              onChange={(e) => setCargo(e.target.value)}
+              required
+              />
           </div> 
 
-          <button type="submit">Cadastrar Perito</button>
+          <button type="submit">Cadastrar</button>
 
           <button onClick={handleButtonClick}>Ver Lista de Peritos</button>
         </form>       

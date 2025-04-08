@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/Login.css";
-import icon from "../assets/icon.webp";
+import icon from "../assets/icon.png";
 
 function Login() {
   const [senha, setSenha] = useState("");

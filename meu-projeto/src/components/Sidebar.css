@@ -1,7 +1,7 @@
 .sidebar{
     width: 180px;
     height: 100vh;
-    background-color: #3155a4;
+    background-color: #7691d6;
     color: white;
     padding: 20px;
     position: fixed;
@@ -45,6 +45,8 @@
 }
 .sidebar img{
     width: 90px;
+    background-color: white;
+    border: none;
 }
 /* responsividade */
 @media (max-width: 768px) {

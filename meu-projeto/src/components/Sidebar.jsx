@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../components/Sidebar.css"
-import icon from "../assets/icon.webp"
+import icon from "../assets/icon.png"
 
 function Sidebar() {
   const tipoUsuario = localStorage.getItem("tipoUsuario")?.toLowerCase();
